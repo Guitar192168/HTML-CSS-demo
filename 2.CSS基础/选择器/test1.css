@@ -1,0 +1,52 @@
+a :link {
+    color: pink;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    color: indianred;
+}
+
+a:active {
+    color: #008c8c;
+}
+
+a {
+    display: block;
+}
+
+
+p {
+    text-index: 2em;
+    line-height: 20px;
+}
+
+p.red {
+    color: skyblue;
+}
+
+
+.red li {
+    color: #008c8c;
+    font-style:italic;
+}
+
++ 是只匹配相邻的， ~ 是匹配后面所有的
+.xianglin ~ li {
+    color: orange;
+}
+
+/*元素选择器*/
+
+选中所有具有href属性的元素
+
+/*[href] {*/
+/*    color: darkcyan;*/
+/*}*/
+
+[href="http://www.bilibili.com"] {
+    color: pink;
+}

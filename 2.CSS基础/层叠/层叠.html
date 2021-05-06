@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a {
+            color: pink;
+        }
+
+
+        #mySpan {
+            color: red;
+        }
+
+
+        #myP #mySpan {
+            color: skyblue;
+        }
+
+        #myDiv #myP #mySpan a:link {
+            color: orange;
+        }
+
+        #myDiv #myP #mySpan a {
+            color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="myDiv">
+    <p id="myP">
+            <span id="mySpan">
+                <a href="">你好，测试一下层叠</a>
+            </span>
+    </p>
+</div>
+</body>
+</html>
