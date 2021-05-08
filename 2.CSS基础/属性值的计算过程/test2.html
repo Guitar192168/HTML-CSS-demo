@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demoInherit {
+            color: #008c8c;
+        }
+
+        a {
+            color: inherit;
+            text-decoration:none;
+        }
+
+        .divInitial {
+            width: 200px;
+            height: 200px;
+            /* background: pink; */
+            
+            /* 使用initial后就可以
+                恢复元素的默认值
+             */
+            background: initial;
+        }
+    </style>
+</head>
+
+<body>
+    <!--实验一下inherit -->
+    <div class='demoInherit'>
+        <a href="">测试一下inherit</a>
+    </div>
+
+
+    <!-- 实验一下 initaial -->
+
+    <div class='divInitial'>
+        测试一下initial
+    </div>
+</body>
+
+</html>
