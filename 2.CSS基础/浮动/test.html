@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        span{
+        span {
             border: 1px solid;
             float: left;
         }
+
+        div {
+            width: 1000px;
+            height: 800px;
+            background-color: #008c8c;
+        }
+
+        .item {
+            float: left;
+            border: 1px solid;
+            height: 160px;
+            width: 100px;
+            color: #fff;
+            background: transparent;
+            /* background-color: pink; */
+        }
+
+        .normal {
+            height: 100px;
+            background-color: skyblue;
+        }
     </style>
 </head>
+
 <body>
     <span>
         Lorem ipsum dolor sit amet.
     </span>
+    <span>行盒在排列的时候，会避开浮动盒子</span>
+    <span>行盒在排列的时候2</span>
+    <span>行盒在排列的时候3</span><span>行盒在排列的时候4</span>
+    <span>行盒在排列的时候5</span><span>行盒在排列的时候6</span><span>行盒在排列的时候7</span><span>行盒在排列的时候8</span><span>行盒在排列的时候9</span><span>行盒在排列的时候10</span>
+
+
+    <div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+        <div class="item">17</div>
+        <div class="item">18</div>
+        <div class="item">19</div>
+        <div class="item">20</div>
+        <div class="normal"></div>
+    </div>
 </body>
+
 </html>
