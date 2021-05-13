@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .container{
+            /*line-height: 20px;*/
+            /*行高为字体大小的两倍*/
+            /*是先计算像素值，再继承*/
+            /*line-height: 2em;*/
+
+            /*行高为字体大小的两倍
+            先继承，再计算属性值*/
+            line-height: 2;
+        }
+
+        p:nth-child(1){
+            font-size: 40px;
+        }
+
+        p:nth-child(2){
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eos nesciunt porro qui rem totam, vitae
+        voluptatem! Dolores doloribus laboriosam perferendis sapiente ut. Alias assumenda at, blanditiis dolorem
+        exercitationem facilis hic in ipsam minima nemo neque quam qui reiciendis similique sunt velit veniam,
+        voluptatum. At blanditiis consequatur cumque dignissimos exercitationem hic, incidunt labore maiores molestiae
+        perspiciatis, porro quasi quisquam repellendus, similique sint velit veritatis. Ab amet animi aperiam cumque
+        cupiditate dolor doloremque doloribus ducimus eaque ex incidunt labore magnam mollitia natus nostrum provident
+        quaerat ratione repellendus repudiandae sunt tempore totam, vero, voluptates. Magnam quasi quidem repellat
+        sapiente velit. Dolor, dolores?</p>
+    <p>Beatae cum cupiditate illum nostrum quas? Accusantium alias, aliquid dignissimos enim eos harum id in laboriosam
+        libero nihil non odio provident ut? Ducimus, eligendi expedita harum hic ipsa ipsum iure libero maiores nam
+        natus officia optio quibusdam ratione reprehenderit sequi tempora temporibus voluptatem. Accusamus alias aperiam
+        atque consequatur distinctio, dolore ducimus eius et excepturi facilis fugiat impedit ipsam laborum magnam modi
+        molestias necessitatibus neque numquam obcaecati odit optio quae quaerat quas qui quidem quis quo quos
+        repellendus saepe sunt tempora velit vero voluptates. Accusantium assumenda delectus deleniti deserunt et
+        eveniet hic in ipsum, itaque molestias nostrum numquam porro quis voluptatem.</p>
+</div>
+</body>
+</html>

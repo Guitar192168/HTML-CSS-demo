@@ -43,15 +43,36 @@
             flex-grow: 2;
         }
 
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            width: 800px;
+            height: 800px;
+            border: 1px solid;
+        }
+        
+        .item {
+            background-color: #f00;
+            width: 100px;
+            height: 100px;
+        }
+
     </style>
 </head>
 
 <body>
-    <ul id="list">
-        <li>test1</li>
-        <li>test2</li>
-        <li>test3</li>
-    </ul>
+<!--    <ul id="list">-->
+<!--        <li>test1</li>-->
+<!--        <li>test2</li>-->
+<!--        <li>test3</li>-->
+<!--    </ul>-->
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
 </body>
+
 
 </html>
