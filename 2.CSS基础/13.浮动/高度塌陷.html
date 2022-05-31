@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .container{
+        .container {
             background-color: skyblue;
             padding: 30px;
         }
 
-        .item{
+        .item {
             height: 100px;
             width: 100px;
-            background-color:pink;
+            background-color: pink;
             margin: 20px;
             float: left;
         }
 
-        /*.clearfix{*/
-        /*    clear:both;*/
-        /*}*/
+        .clearfix {
+            clear: both;
+            /* 触发 hasLayout */
+            zoom: 1;
+        }
 
-        /*.container::after{*/
-        /*    content:'';*/
-        /*    display: block;*/
-        /*    clear:both;*/
-        /*}*/
+
+        .container::after {
+            content: '020';
+            display: block;
+            clear: both;
+            visibility:hidden;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="item">1</div>
@@ -39,8 +45,9 @@
         <div class="item"></div>
         <div class="item"></div>
         <br clear="both" />
-<!--        是因为这个div撑开了外层容器的高度-->
-<!--        <div class="clearfix"></div>-->
+        是因为这个div撑开了外层容器的高度
+        <div class="clearfix"></div>
     </div>
 </body>
+
 </html>
