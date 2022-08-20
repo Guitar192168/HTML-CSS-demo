@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>123</div>
+
+  <!-- 无语义的span元素 仅用于设置样式 -->
+  <span>123</span>
+
+  <!-- 空白折叠 连续的空格，换行，制表都会折叠为一个空格 -->
+  <div>
+    <div>11            222</div>
+  </div>
+
+  <!-- pre标签解决 实际还是内部css样式在起作用 white-space: pre 在生效 -->
+  <!-- pre标签会原封不动的展示源代码 -->
+  <pre>
+    <div>11            
+      
+      222</div>
+    <!-- 也会把代码带出来 -->
+    console.log('123')
+  </pre>
+
+  <!-- 测试一下 white-space:pre -->
+  果然生效
+  <div style="white-space: pre">
+    1111
+
+    222
+      33
+  </div>
+</body>
+</html>
