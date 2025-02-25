@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            border: 1px solid #008c8c;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+            margin: 2px;
+        }
+
+        .pager a:hover {
+            /* 它两个冲突的时候用到了这个背景 */
+            border-color: #38f;
+            background: #008c8c;
+        }
+
+        /* .pager .select { */
+        /* 上面的是有计算值为2  各有一个类选择器，然后一个伪类选择器hover外加一个a元素选择器，层级更高
+        
+        一个是只有类选择器，优先使用上面的样式，那么给下面一个元素选择器就可以解决了 */
+        .pager a.select {
+            border: none;
+            color: #000;
+            background: initial;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pager">
+        <a href="">1</a>
+        <a class="select" href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <a href="">6</a>
+        <a href="">7</a>
+        <a href="">8</a>
+        <a href="">9</a>
+        <a href="">10</a>
+    </div>
+</body>
+
+</html>
