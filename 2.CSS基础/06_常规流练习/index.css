@@ -1,0 +1,58 @@
+body {
+    background-color: #4d4a40;
+    padding: 20px 0;
+    line-height: 2;
+    min-width: 1000px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    background: #fff;
+    width: 90%;
+    /* 不能叫 没有上下外边距， 只能说是上下外边距是0 */
+    /* 为0，这俩外边距也会合并  父子元素共用一个margin，子元素就不会被挤开了 */
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.container header {
+    background: #267890;
+    color: #fff;
+    text-align: center;
+    /* margin: 30px 0; */
+    border: 5px solid #14414e;
+    margin: 0 -34px;
+}
+
+.container header h1 {
+    font-size: 41px;
+}
+
+.container header .origin-link {
+    color: #dbdbdb;
+    margin-bottom: 26px;
+}
+
+.container header .origin-link a:hover {
+    color: #fff;
+}
+
+.container section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container section p {
+    margin: 1em 0;
+}
+
+.container section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    border-top: 1px dotted;
+    border-top: 1px dashed;
+}

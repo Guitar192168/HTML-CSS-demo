@@ -19,17 +19,26 @@
         }
 
         .clearfix {
+            /* height: 60px; */
+            /* 让这个常规流盒子，看一下天上的排列，我要出现在他们的下方
+                是这个div把外层盒子撑开了
+            */
             clear: both;
             /* 触发 hasLayout */
             zoom: 1;
+            background-color: #008c8c;
         }
 
 
+        /* 伪元素选择器 */
+        /* 给这个元素添加一个最后的子元素 */
         .container::after {
-            content: '020';
+            /* content: '020'; */
+            content: '';
+            /* 默认是行盒 */
             display: block;
             clear: both;
-            visibility:hidden;
+            visibility: hidden;
         }
     </style>
 </head>
@@ -44,9 +53,12 @@
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
-        <br clear="both" />
-        是因为这个div撑开了外层容器的高度
-        <div class="clearfix"></div>
+        <!-- <br clear="both" /> -->
+
+        是因为下面这个div撑开了外层容器的高度
+        <!-- <div class="clearfix"></div> -->
+
+        相当于这个位置加了一个 ::after
     </div>
 </body>
 
